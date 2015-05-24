@@ -46,7 +46,7 @@ public class InputPanel extends JPanel{
 		
 		//new 
 		JLabel firstLabel = new JLabel();
-		targetFolder = new JTextField("F:/comic");
+		targetFolder = new JTextField("");
 		textArea = new JTextArea();
 		btnSelectFolder = new JButton("¬D¿ï¥Ø¿ý");
 		btnDownload = new JButton("¤U¸ü");
@@ -132,7 +132,7 @@ public class InputPanel extends JPanel{
     		public void actionPerformed(ActionEvent actionEvent) {
     	        
     			chooser = new JFileChooser(); 
-    			chooser.setCurrentDirectory(new java.io.File("F:/comic"));
+    			chooser.setCurrentDirectory(new java.io.File("D:/"));
     			chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
     			chooser.setAcceptAllFileFilterUsed(false);
     	    	    
